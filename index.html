@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phake Mp3</title>
+    <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
+    <!-- =========================== ICON =========================== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- =========================== BASE CSS =========================== -->
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <!-- =========================== CSS =========================== -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body id="body" class="">
+    <div class="wrapper">
+        <div class="nav__container">
+            <nav class="nav">
+                <div style=" padding: 1.5rem 2.6rem 0;">
+                    <a href="#" class="nav__logo-link">
+                        <div class="nav__logo"></div>
+                    </a>
+                </div>
+                <div class="nav__menu">
+                    <ul class="nav__menu-list">
+                        <li class="nav__menu-item menu__active" id="mav-menu" >
+                            <a href="#" class="nav__menu-link ">
+                                <i  class="ri-disc-line nav__menu-icon"></i>
+                                <span class="item__title">Cá nhân</span>
+                            </a>
+                        </li>
+                        <li class="nav__menu-item" id="mav-menu">
+                            <a href="#" class="nav__menu-link ">
+                                <i class="ri-gradienter-line nav__menu-icon"></i>
+                                <span class="item__title">Khám phá</span>
+                            </a>
+                        </li>
+                        <li class="nav__menu-item" id="mav-menu">
+                            <a href="#" class="nav__menu-link ">
+                                <i class="ri-line-chart-line nav__menu-icon"></i>
+                                <span class="item__title">#zingchart</span>
+                            </a>
+                        </li>
+                        <li class="nav__menu-item" id="mav-menu">
+                            <a href="#" class="nav__menu-link ">
+                                <i class="ri-router-line nav__menu-icon"></i>
+                                <span class="item__title">Radio</span>
+                            </a>
+                        </li>
+                        <li class="nav__menu-item" id="mav-menu">
+                            <a href="#" class="nav__menu-link ">
+                                <i class="ri-profile-line nav__menu-icon"></i>
+                                <span class="item__title">Theo dõi</span>
+                            </a>
+                        </li>
+                    </ul>                   
+                </div>
+            </nav>
+            <div class="line-space"></div>
+            <nav class="menu-list-two">
+                <div class="menu-list-two-a">
+                    <ul class="nav__menu-list list-two">
+                        <li class="nav__menu-item " id="mav-menu" >
+                            <a href="#" class="nav__menu-link ">
+                                <i class="ri-music-line nav__menu-icon"></i>
+                                <span class="item__title">Nhạc mới</span>
+                            </a>
+                        </li>
+                        <li class="nav__menu-item" id="mav-menu">
+                            <a href="#" class="nav__menu-link ">
+                                <i class="ri-layout-masonry-line nav__menu-icon"></i>
+                                <span class="item__title">Thể loại</span>
+                            </a>
+                        </li>
+                        <li class="nav__menu-item" id="mav-menu">
+                            <a href="#" class="nav__menu-link ">
+                                <i class="ri-star-line nav__menu-icon"></i>
+                                <span class="item__title">Top 100</span>
+                            </a>
+                        </li>
+                        <li class="nav__menu-item" id="mav-menu">
+                            <a href="#" class="nav__menu-link ">
+                                <i class="ri-youtube-line nav__menu-icon"></i>
+                                <span class="item__title">MV</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="nav__buy-vip padding">
+                        <div class="buy-vip">
+                            <div class="buy__title ">Nghe nhạc không quảng cáo cùng kho nhạc VIP</div>
+                            <a href="#" class="buy__link button button-yellow">Mua vip</a>
+                        </div>
+                    </div>
+                    <div class="nav__library">
+                        <div class="nav__library-head">
+                            <div class="nav__library-title padding">Thư viện</div>
+                        </div>
+                        <ul class="nav__library-list padding">
+                            <li class="nav__library-item">
+                                <a href="#" class="nav__library-link">
+                                    <img src="./assets/img/my-song.cf0cb0b4.png" alt="" class="nav__library-img">
+                                    <span class="nav__library-des">Bài hát</span>
+                                </a>
+                            </li>
+                            <li class="nav__library-item">
+                                <a href="#" class="nav__library-link">
+                                    <img src="./assets/img/my-playlist.7e92a5f0.png" alt="" class="nav__library-img">
+                                    <span class="nav__library-des">Playlist</span>
+                                </a>
+                            </li>
+                            <li class="nav__library-item">
+                                <a href="#" class="nav__library-link">
+                                    <img src="./assets/img/nav.png" alt="" class="nav__library-img">
+                                    <span class="nav__library-des">Gần đây</span>
+                                </a>
+                            </li>
+                            <div class="nav__library-setting">
+                                <i class="ri-pencil-line nav__library-setting-icon"></i>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="add__playlist">
+                <button class="add__playlist-btn">
+                    <i class="ri-add-line add add__playlist-icon"></i>
+                    <span class="add__playlist-des">Tạo playlist mới</span>
+                </button>
+            </div>
+        </div>
+        <main class="main">
+            <header class="header " id="header">
+                <div class="header__content">
+                    <div class="header__search isfocus">
+                        <button class="header__search-left"><i class="ri-arrow-left-line header__search-icon"></i></button>
+                        <button class="header__search-right"><i class="ri-arrow-right-line header__search-icon"></i></button>
+                        <div class="header__search-form isfocus">
+                            <i class="ri-search-line header__search-form-icon"></i>
+                            <input type="text" placeholder="Nhập tên bài hát, nghệ sĩ hoặc MV" class="header__search-input">
+                            <ul class="histories-search">
+                                <li class="histories-search-item">
+                                    <i class="ri-search-line histories-search-form-icon"></i>
+                                    <span class="histories-search-des">em hát</span>
+                                </li>
+                                <li class="histories-search-item">
+                                    <i class="ri-search-line histories-search-form-icon"></i>
+                                    <span class="histories-search-des">rồi tới luôn</span>
+                                </li>
+                                <li class="histories-search-item">
+                                    <i class="ri-search-line histories-search-form-icon"></i>
+                                    <span class="histories-search-des">khuê mộc lang</span>
+                                </li>
+                                <li class="histories-search-item">
+                                    <i class="ri-search-line histories-search-form-icon"></i>
+                                    <span class="histories-search-des">rồi tới luôn</span>
+                                </li>
+                                <li class="histories-search-item">
+                                    <i class="ri-search-line histories-search-form-icon"></i>
+                                    <span class="histories-search-des">zing choice</span>
+                                </li>
+                                <li class="histories-search-item">
+                                    <i class="ri-search-line histories-search-form-icon"></i>
+                                    <span class="histories-search-des">#zingchart</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="header__level">
+                        <div class="header__list">
+                            <div class="header__item" id="header-skin">
+                                <button class=" button--level"><i class="ri-t-shirt-fill header__item-icon"></i></button>
+                            </div>
+                            <div class="header__item" id="header-upload">
+                                <button class=" button--level"><i class="ri-upload-2-line header__item-icon"></i></button>
+                            </div>
+                            <div class="header__item header__item--setting">
+                                <button id="js-setting" class=" button--level"><i class="ri-settings-2-line header__item-icon"></i></button>
+                                <div class="header__modal-setting">
+                                    <div class="modal__setting-top">
+                                        <div class="modal__setting-list list-one">
+                                            <div class="modal__setting-tiem">
+                                                <i class="ri-angularjs-line modal__setting-icon icon-one"></i>
+                                                <a href="#" class="modal__setting-link">
+                                                    <span class="modal__setting-text">Danh sách chặn</span>
+                                                </a>
+                                            </div>
+                                            <div class="modal__setting-tiem " id="quality">
+                                                <i class="ri-hq-line modal__setting-icon icon-one"></i>
+                                                <span class="modal__setting-text">Chất lượng nhạc</span>
+                                                <i class="ri-arrow-right-s-line icon-one"></i>
+                                                <div class="modal__setting-sub">
+                                                    <div class="setting__sub-item ">
+                                                        <div class="setting__sub-grp">
+                                                            <h4 class="setting__sub-heading">SQ - 128</h4>
+                                                            <div class="setting__sub-des">Giảm sử dụng dữ liệu cho các kết nối chậm hơn.</div>
+                                                        </div>
+                                                        <i class="ri-check-line setting__sub-icon"></i>
+                                                    </div>
+                                                    <div class="setting__sub-item setting__sub-acvite">
+                                                        <div class="setting__sub-grp">
+                                                            <h4 class="setting__sub-heading">HQ - 320</h4>
+                                                            <div class="setting__sub-des">Kết hợp tốt nhất giữa việc sử dụng dữ liệu và chất lượng âm thanh.</div>
+                                                        </div>
+                                                        <i class="ri-check-line setting__sub-icon"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal__setting-tiem" id="music-player">
+                                                <i class="ri-play-circle-line modal__setting-icon icon-one"></i>
+                                                <span class="modal__setting-text">Trình phát nhạc</span>
+                                                <i class="ri-arrow-right-s-line icon-one"></i>
+                                                <div class="modal__setting-sub" id="sub-two">
+                                                    <div class="setting__sub-item-two ">
+                                                        <div class="setting__sub-grp">
+                                                            <h4 class="setting__sub-heading">Luôn phát nhạc toàn màn hình</h4>
+                                                    
+                                                        </div>
+                                                        <div id="switch-full-screen" class="switch switch--on modal-playlist__option-btn">
+                                                            <div class="switch__left"></div>
+                                                            <div class="switch__right"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="header__modal-setting-bottom">
+                                        <div class="modal__setting-list list-two">
+                                            <div class="modal__setting-item">Giới thiệu</div>
+                                            <div class="modal__setting-item">
+                                                <a href="#" class="modal__setting-link">Góp ý</a>
+                                                <i class="ri-send-plane-line modal__setting-icon icon-two"></i>
+                                            </div>
+                                            <div class="modal__setting-item">
+                                                <a href="#" class="modal__setting-link">Liên hệ</a>
+                                                <i class="ri-send-plane-line modal__setting-icon icon-two"></i>
+                                            </div>
+                                            <div class="modal__setting-item">
+                                                <a href="#" class="modal__setting-link">Quảng cáo</a>
+                                                <i class="ri-send-plane-line modal__setting-icon icon-two"></i>
+                                            </div>
+                                            <div class="modal__setting-item">
+                                                <a href="#" class="modal__setting-link">Thỏa thuận sử dụng</a>
+                                                <i class="ri-send-plane-line modal__setting-icon icon-two"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header__item">
+                                <img src="./assets/img/me.jpg" class="button--level">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="main__container">
+                <div class="user">
+                    <div class="blur"></div>
+                    <img src="./assets/img/me.jpg" alt="" class="user__img">
+                    <div class="effect">
+                        <h2 class="user__name">Chí cường</h2>
+
+                    </div>
+                    <div class="user__option">
+                        <a href="" target="_blank" class="button button-yellow user__link">MUA VIP NGAY</a>
+                        <a href="" target="_blank" class="button button-black user__link">NHẬN CODE VIP</a>
+                        <button class="user__btn"><i class="ri-more-fill user__icon"></i></button>
+                        <div class="user__logout" id="logout">
+                            <div class="logout">
+                                <i class="ri-logout-box-r-line logout__icon"></i>
+                                <span>Đăng xuất</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav__bar-menu">
+                    <div class="nav__bar-list">
+                        <div class="nav__bar-item isactive" id="primary">
+                            <a href="#" target="_top" class="nav__bar-link">
+                                <span>Tổng quan</span>
+                            </a>
+                                
+                        </div>
+                        <div class="nav__bar-item" id="thesong">
+                            <a href="#" target="_top" class="nav__bar-link">
+                                <span>Bài hát</span>
+                            </a>
+                        </div>
+                        <div class="nav__bar-item" id="playlist">
+                            <a href="#" class="nav__bar-link">
+                                <span>Playlist</span>
+                            </a>
+                        </div>
+                        <div class="nav__bar-item" id="artist">
+                            <a href="#" class="nav__bar-link">
+                                <span>Nghệ sĩ</span>
+                            </a>
+                        </div>
+                        <div class="nav__bar-item" id="album">
+                            <a href="#" class="nav__bar-link">
+                                <span>Album</span>
+                            </a>
+                        </div>
+                        <div class="nav__bar-item" id="mv">
+                            <a href="#" class="nav__bar-link">
+                                <span>Mv</span>
+                            </a>
+                        </div>
+                        <div class="nav__bar-item " id="upload">
+                            <a href="#" class="nav__bar-link">
+                                <span>Tải lên</span>
+                            </a>    
+                        </div>
+                    </div>
+                </div>
+                <div class="page overview" id="overview">
+                    <div class="playlist container">
+                        <div class="playlist__header">
+                            <h2 class="playlist__title playlist__title--songs">Bài hát 
+                                <i class="ri-arrow-right-s-line playlist__title-icon"></i>
+                            </h2>
+                            <div class="playlist__option">
+                                <button class="button playlist__btn">
+                                    <i class="ri-upload-2-line playlist__btn-icon "></i>
+                                    <span>Tải lên</span>
+                                </button>
+                                <button id="play-all" class="button playlist__btn playlist__btn--primary">
+                                    <i class="ri-play-mini-fill playlist__btn-icon playlist__btn-icon"></i>
+                                    <span>Phát tất cả</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="playlist__content">
+                            <div class="playlist__img">
+                                <div class="playlist__img-overlay">
+                                    <img src="./assets/img/solam2.jpg" alt="" class="playlist__img-item">
+                                </div>
+                            </div>
+                            <div class="playlist__songs">
+                                <div class="playlist__songs-list">
+                                    
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="playlist-bottom container">
+                        <div class="playlist-bottom__header">
+                            <h2 class="playlist__title playlist__title--playlist">Playlist 
+                                <i class="ri-arrow-right-s-line playlist__title-icon"></i>
+                            </h2>
+                        </div>
+                        <div class="playlist-bottom__body">
+                            <div class="playlist-bottom__new">
+                                <div class="playlist-bottom__content">
+                                    <i class="ri-add-line playlist-bottom-icon"></i>
+                                    <span>Tạo playlist mới</span>
+                                </div>
+                            </div>
+                            <div class="playlist-bottom__4u">
+                                    <div class="playlist-bottom__4u-overlay">
+                                        <a href="#" class="playlist-bottom__4u-link">
+                                            <img src="./assets/img/nghenhieu.jpg" alt="" class="playlist-bottom__4u-img">
+                                            <div class="overlay">
+                                                <div class="overlay__heart">
+                                                    <i class="ri-heart-fill overlay__icon overlay__icon-left"></i>
+                                                </div>
+                                                <div class="overlay__play">
+                                                    <i class="ri-play-circle-line overlay__icon overlay__icon-mid"></i>
+                                                </div>
+                                                <div class="overlay__more">
+                                                    <i class="ri-more-fill overlay__icon overlay__icon-right"></i>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="playlist-bottom__4u-des">
+                                        <a href="#" class="playlist-bottom__4u-link">
+                                            <p>4U On Repeat</p>
+                                        </a>
+                                        <span>Zing MP3</span>
+                                    </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="page song__page hidden-page" id="song-page">
+                    <div class="page__container">
+                        <div class="playlist__header">
+                            <h2 class="playlist__title">Bài hát 
+                                <i class="ri-arrow-right-s-line playlist__title-icon"></i>
+                            </h2>
+                            <div class="playlist__option">
+                                <button class="button playlist__btn">
+                                    <i class="ri-upload-2-line playlist__btn-icon "></i>
+                                    <span>Tải lên</span>
+                                </button>
+                                <button class="button playlist__btn playlist__btn--primary">
+                                    <i class="ri-play-mini-fill playlist__btn-icon playlist__btn-icon"></i>
+                                    <span>Phát tất cả</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="song__page-list">
+                            <div class="song__page-header">
+                                <span class="song__page-title">Bài hát</span>
+                                <span class="song__page-title">Thời gian</span>
+                            </div>
+                            <div class="song__page-lists">
+                                <div class="song__page-item">
+                                    <div class="item__left">
+                                        <i class="ri-music-2-line item__left-icon"></i>
+                                        <img src="./assets/img/solam2.jpg" alt="" class="item__left-img">
+                                        <div class="item__left-content">
+                                            <div class="item__left-song">Sợ lắm 2</div>
+                                            <div class="item__left-singer">
+                                                <a href="#" class="left__singer-link">NB3 hoài bảo</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item__mid">
+                                        <div class="item__mid-content">04:24</div>
+                                    </div>
+                                    <div class="item__right">
+                                        <i class="ri-mv-fill item__right-icon"></i>
+                                        <i class="ri-music-fill item__right-icon"></i>
+                                        <i class="ri-heart-fill item__right-icon item-chose"></i>
+                                        <i class="ri-more-fill item__right-icon"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="page playlist__page hidden-page" id="song-page">
+                    <div class="page__container">
+                        <div class="playlist__header">
+                            <h2 class="playlist__title">Playlist
+                                <i class="ri-arrow-right-s-line playlist__title-icon"></i>
+                            </h2>
+                        </div>
+                        <div class="playlist-bottom__body">
+                            <div class="playlist-bottom__new">
+                                <div class="playlist-bottom__content">
+                                    <i class="ri-add-line playlist-bottom-icon"></i>
+                                    <span>Tạo playlist mới</span>
+                                </div>
+                            </div>
+                            <div class="playlist-bottom__4u">
+                                    <div class="playlist-bottom__4u-overlay">
+                                        <a href="#" class="playlist-bottom__4u-link">
+                                            <img src="./assets/img/nghenhieu.jpg" alt="" class="playlist-bottom__4u-img">
+                                            <div class="overlay">
+                                                <div class="overlay__heart">
+                                                    <i class="ri-heart-fill overlay__icon overlay__icon-left"></i>
+                                                </div>
+                                                <div class="overlay__play">
+                                                    <i class="ri-play-circle-line overlay__icon overlay__icon-mid"></i>
+                                                </div>
+                                                <div class="overlay__more">
+                                                    <i class="ri-more-fill overlay__icon overlay__icon-right"></i>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="playlist-bottom__4u-des">
+                                        <a href="#" class="playlist-bottom__4u-link">
+                                            <p>4U On Repeat</p>
+                                        </a>
+                                        <span>Zing MP3</span>
+                                    </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="page artist__page page__container hidden-page" id="artis-page">
+                    <div class="artist__page-content" >
+                        <img src="./assets/img/artist.png" alt="" class="artist__page-icon">
+                        <div class="artist__page-notification">Không có Nghệ sĩ trong thư viện nhạc cá nhân</div>
+                    </div>
+                </div>
+                <div class="page album__page page__container hidden-page" id="album-page">
+                    <div class="album__page-content" >
+                        <img src="./assets/img/dics.png" alt="" class="album__page-icon">
+                        <div class="album__page-notification">Không có Album trong thư viện nhạc cá nhân</div>
+                    </div>
+                </div>
+                <div class="page mv__page page__container hidden-page" id="mv-page">
+                    <div class="mv__page-content" >
+                        <img src="./assets/img/mv.png" alt="" class="mv__page-icon">
+                        <div class="mv__page-notification">Không có MV trong thư viện nhạc cá nhân</div>
+                    </div>
+                </div>
+                <div class="page upload__page page__container hidden-page" id="upload-page">
+                    <div class="upload__page-content" >
+                        <img src="./assets/img/upload.png" alt="" class="upload__page-icon">
+                        <div class="upload__page-notification">Không có bài hát tải lên</div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <div class="modal-playlist">
+            <div class="modal-playlist__container">
+                <div class="modal-playlist__content">
+                    <h2 class="modal-playlist__heading">Tạo playlist mới</h2>
+                    <div class="modal-playlist__form">
+                        <input type="text" placeholder="Nhập tên playlist" class="modal-playlist__input">
+                    </div>
+                    <div class="modal-playlist__option">
+                        <div class="modal-playlist__text">
+                            <div class="modal-text__content">Công khai</div>
+                            <div class="modal-text__content modal-text__des">
+                                Mọi người có thể nhìn thấy playlist này
+                            </div>
+                        </div>
+                        <div class="switch switch--on modal-playlist__option-btn">
+                            <div class="switch__left"></div>
+                            <div class="switch__right"></div>
+                        </div>
+                    </div>
+                    <div class="modal-playlist__option">
+                        <div class="modal-playlist__text">
+                            <div class="modal-text__content">Phát ngẫu nhiên</div>
+                            <div class="modal-text__content modal-text__des">
+                                Luôn phát ngẫu nhiên tất cả bài hát
+                            </div>
+                        </div>
+                        <div class="switch switch--on modal-playlist__option-btn">
+                            <div class="switch__left"></div>
+                            <div class="switch__right"></div>
+                        </div>
+                    </div>
+                    <button class="modal-playlist-btn btn-disable">Tạo mới</button>
+                </div>
+            </div>
+        </div>
+        <div class="modal-library ">
+            <div class="modal-library__container">
+                <div class="modal-library__content">
+                    <div class="modal-library__title">
+                        <h2 class="modal-library__heading">Thư viện cá nhân</h2>
+                        <span class="modal-library__sub">Bạn có thể tùy chỉnh danh sách thư viện cá nhân.</span>
+                    </div>
+                    <div class="modal-library__list">
+                        <label for="modal-library-songs" class="modal-library__item">
+                            <input checked class="modal-library__check" type="checkbox" name="songs" id="modal-library-songs">
+                            <label for="modal-library-songs" class="modal-library__label">
+                                <img src="./assets/img/my-song.cf0cb0b4.png" alt="" class="modal-library__logo">
+                            </label>
+                            <label for="modal-library-songs" class="modal-library__text">Bài hát</label>
+                        </label>
+                        <label for="modal-library-playlist" class="modal-library__item">
+                            <input checked class="modal-library__check" type="checkbox" name="playlist" id="modal-library-playlist">
+                            <label for="modal-library-playlist" class="modal-library__label">
+                                <img src="./assets/img/my-playlist.7e92a5f0.png" alt="" class="modal-library__logo">
+                            </label>
+                            <label for="modal-library-playlist" class="modal-library__text">Playlist</label>
+                        </label>
+                        <label for="modal-library-album" class="modal-library__item">
+                            <input class="modal-library__check" type="checkbox" name="album" id="modal-library-album">
+                            <label for="modal-library-album" class="modal-library__label">
+                                <img src="./assets/img/album-logo.png" alt="" class="modal-library__logo">
+                            </label>
+                            <label for="modal-library-album" class="modal-library__text">Album</label>
+                        </label>
+                        <label for="modal-library-upload" class="modal-library__item">
+                            <input class="modal-library__check" type="checkbox" name="upload" id="modal-library-upload">
+                            <label for="modal-library-upload" class="modal-library__label">
+                                <img src="./assets/img/upload-logo.png" alt="" class="modal-library__logo">
+                            </label>
+                            <label for="modal-library-upload" class="modal-library__text">Nhạc tải lên</label>
+                        </label>
+                        <label for="modal-library-recently" class="modal-library__item">
+                            <input checked class="modal-library__check" type="checkbox" name="recently" id="modal-library-recently">
+                            <label for="modal-library-recently" class="modal-library__label">
+                                <img src="./assets/img/nav.png" alt="" class="modal-library__logo">
+                            </label>
+                            <label for="modal-library-recently" class="modal-library__text">Gần đây</label>
+                        </label>
+                        <label for="modal-library-person" class="modal-library__item">
+                            <input checked class="modal-library__check" type="checkbox" name="person" id="modal-library-person">
+                            <label for="modal-library-person" class="modal-library__label">
+                                <img src="./assets/img/my-playlist.7e92a5f0.png" alt="" class="modal-library__logo">
+                            </label>
+                            <label for="modal-library-person" class="modal-library__text">Playlist cá nhân</label>
+                        </label>
+                    </div>
+                    <div class="modal-library__btn">
+                        <button class="modal__btn btn-close">Đóng</button>
+                        <button class="modal__btn btn-save ">Lưu</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-skin">
+            <div class="modal-skin__container">
+                <div class="modal-skin__content">
+                    <h2 class="modal-skin__heading">Giao diện</h2>
+                    <div class="modal-skin__view">
+                        <div class="modal-skin__inview">
+                            <div class="modal-skin__list">
+                                <div class="modal-skin__item">
+                                    <h2 class="modal-skin__title">Chủ đề</h2>
+                                    <div class="modal-skin__option">
+                                        <div class="modal-skin__option-item">
+                                            <div class="modal-skin__option-overlay">
+                                                <img src="./assets/img/modalskin1.jpg" alt="" class="modal-skin__img">
+                                            </div>
+                                            <div class="modal-skin__option-text">Zing music awards</div>
+                                        </div>
+                                        <div class="modal-skin__option-item">
+                                            <div class="modal-skin__option-overlay">
+                                                <img src="./assets/img/modalskin2.jpg" alt="" class="modal-skin__img">
+                                            </div>
+                                            <div class="modal-skin__option-text">Tháp eiffen</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-skin__item">
+                                    <h2 class="modal-skin__title">Nghệ sĩ</h2>
+                                    <div class="modal-skin__option">
+                                        <div class="modal-skin__option-item">
+                                            <div class="modal-skin__option-overlay">
+                                                <img src="./assets/img/nghesi1.jpg" alt="" class="modal-skin__img">
+                                            </div>
+                                            <div class="modal-skin__option-text">Jack</div>
+                                        </div>
+                                        <div class="modal-skin__option-item">
+                                            <div class="modal-skin__option-overlay">
+                                                <img src="./assets/img/nghesi2.jpg" alt="" class="modal-skin__img">
+                                            </div>
+                                            <div class="modal-skin__option-text">IU</div>
+                                        </div>
+                                        <div class="modal-skin__option-item">
+                                            <div class="modal-skin__option-overlay">
+                                                <img src="./assets/img/nghesi3.jpg" alt="" class="modal-skin__img">
+                                            </div>
+                                            <div class="modal-skin__option-text">Ji Chang Wook</div>
+                                        </div>
+                                        <div class="modal-skin__option-item">
+                                            <div class="modal-skin__option-overlay">
+                                                <img src="./assets/img/nghesi4.jpg" alt="" class="modal-skin__img">
+                                            </div>
+                                            <div class="modal-skin__option-text">Lisa</div>
+                                        </div>
+                                        <div class="modal-skin__option-item">
+                                            <div class="modal-skin__option-overlay">
+                                                <img src="./assets/img/nghesi5.jpg" alt="" class="modal-skin__img">
+                                            </div>
+                                            <div class="modal-skin__option-text">Jennie Kim</div>
+                                        </div>
+                                        <div class="modal-skin__option-item">
+                                            <div class="modal-skin__option-overlay">
+                                                <img src="./assets/img/nghesi6.jpg" alt="" class="modal-skin__img">
+                                            </div>
+                                            <div class="modal-skin__option-text">Jisoo</div>
+                                        </div>
+                                        <div class="modal-skin__option-item">
+                                            <div class="modal-skin__option-overlay">
+                                                <img src="./assets/img/nghesi7.jpg" alt="" class="modal-skin__img">
+                                            </div>
+                                            <div class="modal-skin__option-text">Rosé</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-skin__item">
+                                    <h2 class="modal-skin__title">Màu tối</h2>
+                                    <div class="modal-skin__option">
+                                        <div id="dark-theme" class="modal-skin__option-item ">
+                                            <div  class="modal-skin__option-overlay theme-color">
+                                                <div class="modal-skin-active">
+                                                    <i class="ri-checkbox-circle-fill modal-skin-active-icon"></i>
+                                                </div>
+                                                <img src="./assets/img/mautoi1.jpg" alt="" class="modal-skin__img">
+                                            </div>
+                                            <div class="modal-skin__option-text">Tối</div>
+                                        </div>
+
+                                        <div id="primary-theme" class="modal-skin__option-item ">
+                                            
+                                            <div class="modal-skin__option-overlay theme-color theme-active ">
+                                                <div class="modal-skin-active">
+                                                    <i class="ri-checkbox-circle-fill modal-skin-active-icon"></i>
+                                                </div>
+                                                <img src="./assets/img/mautoi2.jpg" alt="" class="modal-skin__img">
+                                            </div>
+                                            <div class="modal-skin__option-text">Tím</div>
+                                        </div>
+                                        <div id="dark-blue-theme" class="modal-skin__option-item">
+                                            <div class="modal-skin__option-overlay theme-color">
+                                                <div class="modal-skin-active">
+                                                    <i class="ri-checkbox-circle-fill modal-skin-active-icon"></i>
+                                                </div>
+                                                <img src="./assets/img/mautoi3.jpg" alt="" class="modal-skin__img">
+                                            </div>
+                                            <div class="modal-skin__option-text">Xanh đậm</div>
+                                        </div>
+                                        <div id="light-blue-theme" class="modal-skin__option-item">
+                                            <div class="modal-skin__option-overlay theme-color">
+                                                <div class="modal-skin-active">
+                                                    <i class="ri-checkbox-circle-fill modal-skin-active-icon"></i>
+                                                </div>
+                                                <img src="./assets/img/mautoi4.jpg" alt="" class="modal-skin__img">
+                                            </div>
+                                            <div class="modal-skin__option-text">Xanh biển</div>
+                                        </div>
+                                        <div id="dark-green-theme" class="modal-skin__option-item">
+                                            <div class="modal-skin__option-overlay theme-color">
+                                                <div class="modal-skin-active">
+                                                    <i class="ri-checkbox-circle-fill modal-skin-active-icon"></i>
+                                                </div>
+                                                <img src="./assets/img/mautoi5.jpg" alt="" class="modal-skin__img">
+                                            </div>
+                                            <div class="modal-skin__option-text">Xanh lá</div>
+                                        </div>
+                                        <div id="dark-brown-theme" class="modal-skin__option-item">
+                                            <div class="modal-skin__option-overlay theme-color">
+                                                <div class="modal-skin-active">
+                                                    <i class="ri-checkbox-circle-fill modal-skin-active-icon"></i>
+                                                </div>
+                                                <img src="./assets/img/mautoi6.jpg" alt="" class="modal-skin__img">
+                                            </div>
+                                            <div class="modal-skin__option-text">Nâu</div>
+                                        </div>
+                                        <div id="dark-pink-theme" class="modal-skin__option-item">
+                                            <div class="modal-skin__option-overlay theme-color">
+                                                <div class="modal-skin-active">
+                                                    <i class="ri-checkbox-circle-fill modal-skin-active-icon"></i>
+                                                </div>
+                                                <img src="./assets/img/mautoi7.jpg" alt="" class="modal-skin__img">
+                                            </div>
+                                            <div class="modal-skin__option-text">Hồng</div>
+                                        </div>
+                                        <div id="dark-red-theme" class="modal-skin__option-item">
+                                            <div class="modal-skin__option-overlay theme-color">
+                                                <div class="modal-skin-active">
+                                                    <i class="ri-checkbox-circle-fill modal-skin-active-icon"></i>
+                                                </div>
+                                                <img src="./assets/img/mautoi8.jpg" alt="" class="modal-skin__img">
+                                            </div>
+                                            <div class="modal-skin__option-text">Đỏ</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-skin__item">
+                                    <h2 class="modal-skin__title">Màu sáng</h2>
+                                    <div class="modal-skin__option">
+                                        <div id="light-theme" class="modal-skin__option-item">
+                                            <div class="modal-skin__option-overlay theme-color">
+                                                <div class="modal-skin-active">
+                                                    <i class="ri-checkbox-circle-fill modal-skin-active-icon"></i>
+                                                </div>
+                                                <img src="./assets/img/mausang1.jpg" alt="" class="modal-skin__img">
+                                            </div>
+                                            <div class="modal-skin__option-text">Sáng</div>
+                                        </div>
+                                        <div id="light-grey-theme" class="modal-skin__option-item">
+                                            <div class="modal-skin__option-overlay theme-color">
+                                                <div class="modal-skin-active">
+                                                    <i class="ri-checkbox-circle-fill modal-skin-active-icon"></i>
+                                                </div>
+                                                <img src="./assets/img/mausang2.jpg" alt="" class="modal-skin__img">
+                                            </div>
+                                            <div class="modal-skin__option-text">Xám</div>
+                                        </div>
+                                        <div id="light-cyan-theme" class="modal-skin__option-item">
+                                            <div class="modal-skin__option-overlay theme-color">
+                                                <div class="modal-skin-active">
+                                                    <i class="ri-checkbox-circle-fill modal-skin-active-icon"></i>
+                                                </div>
+                                                <img src="./assets/img/mausang3.jpg" alt="" class="modal-skin__img">
+                                            </div>
+                                            <div class="modal-skin__option-text">Xanh nhạt</div>
+                                        </div>
+                                        <div id="light-pink-theme" class="modal-skin__option-item">
+                                            <div class="modal-skin__option-overlay theme-color">
+                                                <div class="modal-skin-active">
+                                                    <i class="ri-checkbox-circle-fill modal-skin-active-icon"></i>
+                                                </div>
+                                                <img src="./assets/img/mausang4.jpg" alt="" class="modal-skin__img">
+                                            </div>
+                                            <div class="modal-skin__option-text">Hồng cánh sen</div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-skin__close">
+                        <i class="ri-close-line modal-skin__icon"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="play-list">
+            <div class="play-list__container">
+                <div class="play-list__header">
+                    <div class="play-list__header-left">
+                        <span class="play-list__text is-active">Danh sách phát</span>
+                        <span class="play-list__text">Nghe gần đây</span>
+                    </div>
+                    <div class="play-list__header-option">
+                        <i class="ri-timer-line play-list__header-icon"></i>
+                        <i class="ri-more-fill play-list__header-icon"></i>
+                    </div>
+                </div>
+                <div class="play-list__music">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="player">
+            <audio src="" id="audio" class="audio-class"></audio>
+            <div class="player__control">
+                <div class="player__control-thumbs">
+                    <div class="player__control-left">
+                        <div class="thumbs__overlay">
+                                <i class="ri-music-2-line thumbs-icon thumbs-icon-1"></i>
+                                <i class="ri-music-2-line thumbs-icon thumbs-icon-2"></i>
+                                <i class="ri-music-2-line thumbs-icon thumbs-icon-3"></i>
+                                <i class="ri-music-2-line thumbs-icon thumbs-icon-4"></i>
+                                <i class="ri-music-line thumbs-icon thumbs-icon-5"></i>
+                                <i class="ri-music-line thumbs-icon thumbs-icon-6"></i>
+                                <i class="ri-music-line thumbs-icon thumbs-icon-7"></i>
+                                <i class="ri-music-line thumbs-icon thumbs-icon-8"></i>
+                            <img id="cd-thumb" src="./assets/img/solam2.jpg" alt="" class="thumbs__img">
+                        </div>
+                        <div class="thumbs__content">
+                            <p class="thumbs__title">Sợ lắm 2</p>
+                            <span class="thumbs__name">Nb3 hoài bảo, freak d</span>
+                        </div>
+                        <div class="thumbs__option">
+                            <i class="ri-heart-fill thumbs__option-icon"></i>
+                            <i class="ri-more-fill thumbs__option-icon"></i>
+                        </div>
+                        
+                    </div>
+                    <div class="player__control-between">
+                        <div class="control__between-top ">
+                            <i id="ramdom-songs" class="ri-shuffle-fill control-js control__between-icon "></i>
+                            <i id="prev-songs" class="ri-skip-back-fill  control__between-icon"></i>
+                            <i id="play-songs" class="ri-play-circle-line control__between-icon"></i>
+                            <i id="pause-songs" class="ri-pause-circle-line control__between-icon pausing"></i>
+                            <i id="next-songs" class="ri-skip-forward-fill  control__between-icon"></i>
+                            <i id="repeat-songs" class="ri-repeat-one-fill control-js control__between-icon"></i>
+                        </div>
+                        <div class="control__betwenn-bottom">
+                            <span class="control__bottom-time" id="time-start">00:00</span>
+                            <div class="control__bottom-range" >
+                                <div class="bg-timer"></div>
+                                <input type="range" value="0" step="1" min="1" max="100" class="control__timer" id="time-change">
+                                <div class="range__progress"></div>
+                            </div>
+                            <span class="control__bottom-time" id="time-end">04:25</span>
+                        </div>
+                    </div>
+                    <div class="player__control-right">
+                        <div class="control__right-option">
+                            <i class="ri-mv-line control__right-icon"></i>
+                            <i class="ri-music-fill control__right-icon"></i>
+                            <i id="volume" class="ri-volume-up-line control__right-icon"></i>
+                            <div class="control__volume">
+                                <div class="bg-volume"></div>
+                                <input type="range" id="control-volume" value="70" min="0" max="100" class="control__volume-range">
+                                <div class="range__progress-volume"></div>
+                            </div>
+                        </div>
+                        <div class="control__playlist">
+                            <i class="ri-play-list-line control__playlist-icon"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="music.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="handlepage.js"></script>
+    
+</body>
+</html>

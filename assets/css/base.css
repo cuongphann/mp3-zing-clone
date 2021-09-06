@@ -1,0 +1,356 @@
+/* ======================== GOOGLE FONT ====================== */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+    /* =========== colors ============ */
+    --title-color: #feffff;
+    --name-songs-color: #f5f6f8;
+    --button-color: #ffdb00;
+    --black-color: #443c3b;
+    
+    --input-color:#563983;
+    
+    /* skin color */
+    --primary-color: #7200a1;
+    --nav-color: #231b2e;
+    --bg-color: #191222;
+    --primary-color-second: #432275;
+    --player-control-color: #120c1c;
+    --time-color: #838383;
+    --layout-color: #120822;
+    --hover-color: #393243;
+
+    --item-hover-color: #563983;
+    --white-color: #fff;
+    --text-color: #cdd3d9;
+    --text-blur-color: hsla(0,0%,100%,0.5);
+    --upload-color:#353535;
+    --menu-color: #2f2739;
+    --menu-active-color: #795959;
+    --scroll-bar-color: #2a1052;
+    --setting-color: #432275;
+
+    /* =========== colors gradient ============ */
+    --gra-color: linear-gradient(117deg,#5a4be7,#c86dd7 102%);
+    --gra-color-2: linear-gradient(33deg,#5a1eae -7%,#ce267a 117%);;
+    --img-logo-mp3: url(/assets/img/logo-dark.png);
+    --img-logo: url(/assets/img/logo-light.png);
+    /* =========== font / size ============ */
+    --text-font: 'Inter', sans-serif;
+    --biggest-font: 3.2rem;
+    --normal-font: 1.3rem;
+    --small-font: 1.2rem;
+    --songs-name-font: 1.4rem;
+    /* =========== font weight ============ */
+    --font-normal: 400;
+    --font-medium: 500;
+    --fonr-semi-bold: 600;
+    /* =========== margin bottom ============ */
+    --mb-0-25: .25rem;
+    --mb-0-5: .5rem;
+    --mb-0-75: .75rem;
+    --mb-1: 1rem;
+    --mb-1-5: 1.5rem;
+    --mb-1-75: 1.75rem;
+    --mb-2: 2rem;
+    --mb-2-5: 2.5rem;
+    --mb-2-75: 2.75rem;
+    --mb-3: 3rem;
+    --mb-3-5: 3.5rem;
+    --mb-3-75: 3.75rem;
+    --mb-4: 4rem;
+    /* =========== z index ============ */
+    --z-normal: 10;
+    --z-tooltip: 100;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: var(--text-font);
+}   
+img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+button,input {
+    outline: none;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+.padding {
+    padding: 0 2.5rem;
+}
+.button {
+    padding: .6rem 1.9rem;
+    border-radius: 24px;
+}
+.button-yellow {
+    color: var(--black-color);
+    background-color: var(--button-color);
+}
+.button-black {
+    color: var(--white-color);
+    background-color: hsla(0,0%,100%,0.1);
+}
+.switch {
+    width: 2.4rem;
+    height: 1.5rem;
+    align-self: center;
+    border-radius: 25px;
+    cursor: pointer;
+    display: flex;
+}
+.switch--off {
+    background-color: #a0a0a0;
+}
+.switch--on {
+    background-color: var(--primary-color);
+}
+.switch__left,
+.switch__right{
+    width: 50%;
+    padding: .72rem;
+    border-radius: 50%;
+    background-color: #ffffff;
+}
+.switch__right {
+    margin-left: 1rem;
+}
+.switch--on .switch__left {
+    display: none;
+}
+.switch--off .switch__right {
+    display: none;
+}
+
+/* =================== DARK/LIGHT THEME  =================== */
+/* theme skin css */
+body.dark-theme {
+    --primary-color: #7200a1;
+    --nav-color: #292929;
+    --bg-color: #1e1e1e;
+    --primary-color-second: #1e1e1e;
+    --time-color: #838383;
+
+    --hover-color: #3f3f3f;
+    --player-control-color: #181818;
+    --layout-color: #2d2f32;
+    --input-color:#3d3d3d;
+    --white-color: #fff;
+    --text-color: hsla(0,0%,100%,0.5);
+    --item-hover-color: #353535;
+    --text-blur-color: hsla(0,0%,100%,0.5);
+    --menu-color: #353535;
+    --menu-active-color: #727272;
+    --scroll-bar-color: #191919;
+    --setting-color: #282828;
+}
+
+
+body.light-blue-theme {
+    --primary-color: #34a8f5;
+    --nav-color: #365494;
+    --time-color: #5c697c;
+    
+    --hover-color: #576d9e;
+
+    --menu-active-color: #8795b3;
+    --text-blur-color: hsla(0,0%,100%,0.5);
+    --white-color: #fff;
+    --text-color: hsla(0,0%,100%,0.5);
+    
+    --bg-color: #274ea3;
+    --primary-color-second: #274ea3;
+
+    --player-control-color: #0f2f74;
+    --scroll-bar-color: #0f2f74;
+    
+    --menu-color: #1a5eb6;
+    --upload-color: #1a5eb6;
+    --setting-color: #3370c0;
+    
+    --item-hover-color: #6f87a7;
+    --input-color:#6f87a7;
+
+
+
+    --layout-color: #0b274c;
+
+}
+body.dark-blue-theme {
+    --primary-color: #3460f5;
+    --nav-color: #1c2a49;
+    --time-color: #565e70;
+    
+    --hover-color: #33405c;
+
+    --menu-active-color: #697387;
+    --text-blur-color: hsla(0,0%,100%,0.5);
+    --white-color: #fff;
+    --text-color: hsla(0,0%,100%,0.5);
+    
+    --bg-color: #101f3f;
+    --primary-color-second: #192f60;
+
+    --player-control-color: #0d1932;
+    --scroll-bar-color: #0d1932;
+    --setting-color: #192f60;
+    
+    --menu-color: #283653;
+    --upload-color: #283653;
+    --setting-color: #274a78;
+    
+    --item-hover-color: #3d5c86;
+    --input-color:#304470;
+
+    --layout-color: #223c75;
+
+}
+body.dark-green-theme {
+    --primary-color: #309785;
+    --nav-color: #1e4e3e;
+    --time-color: #576d6c;
+    
+    --hover-color: #356052;
+
+    --menu-active-color: #649b84;
+    --text-blur-color: hsla(0,0%,100%,0.5);
+    --white-color: #fff;
+    --text-color: rgb(219, 219, 219);
+    
+    --bg-color: #124534;
+    --primary-color-second: #124534;
+
+    --player-control-color: #0e372a;
+    --scroll-bar-color: #0e372a;
+    --setting-color: #126e54;
+    --menu-color: #2a5849;
+    --upload-color: #2a5849;
+    
+    --item-hover-color: #2a7d65;
+    --input-color:#1e4e3e;
+
+    --layout-color: #0c523a;
+
+}
+body.dark-brown-theme {
+    --primary-color: #986d5c;
+    --nav-color: #604a45;
+    --time-color: #6f6a6f;
+    
+    --hover-color: #705c58;
+
+    --menu-active-color: #968784;
+    --text-blur-color: hsla(0,0%,100%,0.5);
+    --white-color: #fff;
+    --text-color: rgb(219, 219, 219);
+    
+    --bg-color: #57403b;
+    --primary-color-second: #57403b;
+
+    --player-control-color: #46332f;
+    --scroll-bar-color: #46332f;
+    --setting-color: #6f514c;
+    --menu-color: #68534f;
+    --upload-color: #68534f;
+    
+    --item-hover-color: #7e635e;
+    --input-color:#7e635e;
+    --layout-color: #63423c;
+    
+}
+body.dark-pink-theme {
+    --primary-color: #d820b0;
+    --nav-color: #860d6c;
+    --time-color: #944d85;
+    
+    --hover-color: #92267b;
+
+    --menu-active-color: #af5f9e;    
+    --text-blur-color: hsla(0,0%,100%,0.5);
+    --white-color: #fff;
+    --text-color: rgb(219, 219, 219);
+    
+    --bg-color: #800064;
+    --primary-color-second: #800064;
+
+    --player-control-color: #660050;
+    --scroll-bar-color: #560b45;
+    --setting-color: #a22687;
+    --menu-color: #8d1a74;
+    --upload-color: #8d1a74;
+    
+    --item-hover-color: #a95397;
+    --input-color:#a95397;
+    --layout-color: #800064;
+
+}
+body.dark-red-theme {
+    --primary-color: #aa1c1c;
+    --nav-color: #7a2323;
+    --time-color: #8d5959;
+    
+    --hover-color: #883939;
+
+    --menu-active-color: #a76e6e;
+    --text-blur-color: hsla(0,0%,100%,0.5);
+
+    --white-color: #fff;
+    --text-color: rgb(219, 219, 219);
+    
+    --bg-color: #731717;
+    --primary-color-second: #731717;
+
+    --player-control-color: #5c1212;
+    --scroll-bar-color: #69272a;
+    
+    --setting-color: #883236;
+    --menu-color: #812f2f;
+    --upload-color: #812f2f;
+    
+    --item-hover-color: #94474a;
+    --input-color:#94474a;
+    --layout-color: #561111;
+
+}
+body.light-theme {
+    --primary-color: #6b3483;
+    --nav-color: #f2f2f2;
+    --time-color: #e5e5e5;
+    
+    --hover-color: #e6e6e6;
+
+    --menu-active-color: #ffffff;
+    --text-blur-color: #7e7977;
+
+    --white-color: #32323d;
+    --text-color: #32323d;
+    
+    --bg-color: #ffffff;
+    --primary-color-second: #ffffff;
+
+    --player-control-color: #fff;
+    --scroll-bar-color: #989898;
+    
+    --setting-color: #ffffff;
+
+    --menu-color: #f2f2f2;
+    --upload-color: #f2f2f2;
+    
+    --item-hover-color: #f2f2f2;
+    --input-color: #f2f2f2;
+    --layout-color: #ffffff;
+
+}
