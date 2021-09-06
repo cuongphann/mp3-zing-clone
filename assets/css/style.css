@@ -727,7 +727,7 @@ body.light-theme .button--level{
     top: 50%;
     left: 3rem;
     transform: translate(-50%,-50%);
-    background-image: url(/assets/img/icon-playing.gif);
+    background-image: url(../img/icon-playing.gif);
     width: 20px;
     height: 25px;
     background-size: contain;
