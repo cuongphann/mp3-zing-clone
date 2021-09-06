@@ -409,10 +409,6 @@ body.dark-red-theme .header__search-icon {
     margin-left: 4rem;
     column-gap: 1rem;
 }
-.header__item:hover{
-    /* opacity: .9; */
-    
-}
 
 .header__item--setting {
     position: relative;
@@ -727,7 +723,7 @@ body.light-theme .button--level{
     top: 50%;
     left: 3rem;
     transform: translate(-50%,-50%);
-    background-image: url(../assets/img/icon-playing.gif);
+    background-image: url(../img/icon-playing.gif);
     width: 20px;
     height: 25px;
     background-size: contain;
@@ -1575,9 +1571,7 @@ body.light-theme .overlay__icon {
 .icon-one {
     font-size: 2.2rem;
 }
-.modal__setting-list{
-    
-}
+
 .list-two{
     padding-top: 1rem;
 }
@@ -1629,9 +1623,7 @@ body.light-theme .overlay__icon {
 .setting__sub-item-two:hover{
     background-color: var(--item-hover-color);
 }
-.setting__sub-acvite{
 
-}
 .setting__sub-heading {
     font-weight: 500;
     width: max-content;
@@ -1803,9 +1795,7 @@ body.light-theme .overlay__icon {
     border-radius: 10px;
     padding: 2rem;
 }
-.modal-library__title{
-    
-}
+
 .modal-library__heading{
     color: var(--white-color);
     font-size: 1.8rem;
@@ -1856,8 +1846,7 @@ body.light-theme .overlay__icon {
 .modal-library__check:checked::after {
     display: block;
 }
-.modal-library__label{
-}
+
 .modal-library__logo{
     margin-top: 0.3rem;
 }
