@@ -33,8 +33,8 @@
     /* =========== colors gradient ============ */
     --gra-color: linear-gradient(117deg,#5a4be7,#c86dd7 102%);
     --gra-color-2: linear-gradient(33deg,#5a1eae -7%,#ce267a 117%);;
-    --img-logo-mp3: url(./assets/img/logo-dark.png);
-    --img-logo: url(./assets/img/logo-light.png);
+    --img-logo-mp3: url(../img/logo-dark.png);
+    --img-logo: url(../img/logo-light.png);
     /* =========== font / size ============ */
     --text-font: 'Inter', sans-serif;
     --biggest-font: 3.2rem;
