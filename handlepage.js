@@ -19,6 +19,20 @@ const navLibrarys = document.querySelectorAll('.nav__library-item');
 const overViewPage = document.getElementById('overview');
 const songPage = document.getElementById('song-page');
 
+
+function loadPage(check, add) {
+    // lay ra tat ca cac trang 
+    pages.forEach(function(item) {
+        // kiem tra xem co phai la trang da chon hay khong
+        if(item.closest(check)) {
+            // neu chon thi none cac trang con lai
+            item.classList.add(add);
+        }
+        else {
+            item.classList.remove(add);
+        }
+    })
+}
 navLibrarys[0].onclick = function() {
     app.renderSong();
     navItem.forEach(function(item) {
@@ -28,13 +42,8 @@ navLibrarys[0].onclick = function() {
             item.classList.remove('isactive')
         }
     })
-    pages.forEach(function(item) {
-        if(item.closest('.page:not(.song__page)')) {
-            item.classList.add('hidden-page');
-        } else {
-            item.classList.remove('hidden-page');
-        }
-    })
+    loadPage('.page:not(.song__page)','hidden-page')
+
 }
 navLibrarys[1].onclick = function() {
     navItem.forEach(function(item,index) {
@@ -44,112 +53,43 @@ navLibrarys[1].onclick = function() {
             item.classList.remove('isactive')
         }
     })
-    pages.forEach(function(item) {
-        if(item.closest('.page:not(.playlist__page)')) {
-            item.classList.add('hidden-page');
-        }
-        else {
-            item.classList.remove('hidden-page');
-        }
-    })
+    loadPage('.page:not(.playlist__page)','hidden-page')
+    
 }
-
 primaryPageBtn.onclick = function() {
-    // lay ra tat ca cac trang 
-    pages.forEach(function(item) {
-        // kiem tra xem co phai la trang da chon hay khong
-        if(item.closest('.page:not(.overview)')) {
-            // neu chon thi none cac trang con lai
-            item.classList.add('hidden-page');
-        } else {
-            item.classList.remove('hidden-page');
-        }
-    })
+    loadPage('.page:not(.overview)','hidden-page')
 }
 songPageBtn.onclick = function() {
     app.renderSong();
-    pages.forEach(function(item) {
-        if(item.closest('.page:not(.song__page)')) {
-            item.classList.add('hidden-page');
-        } else {
-            item.classList.remove('hidden-page');
-        }
-    })
+    loadPage('.page:not(.song__page)','hidden-page')
 }
 titleSongBtn.onclick = function() {
     app.renderSong();
     primaryPageBtn.classList.remove('isactive');
     songPageBtn.classList.add('isactive');
-    pages.forEach(function(item) {
-        if(item.closest('.page:not(.song__page)')) {
-            item.classList.add('hidden-page');
-        } else {
-            item.classList.remove('hidden-page');
-        }
-    })
+    loadPage('.page:not(.song__page)','hidden-page')
 }
 
 titlePlaylist.onclick = function() {
     songPageBtn.classList.remove('isactive');
     primaryPageBtn.classList.remove('isactive');
     playlistPageBtn.classList.add('isactive');
-    pages.forEach(function(item) {
-        if(item.closest('.page:not(.playlist__page)')) {
-            item.classList.add('hidden-page');
-        } else {
-            item.classList.remove('hidden-page');
-        }
-    })
+    loadPage('.page:not(.playlist__page)','hidden-page')
 }
 playlistPageBtn.onclick = function() {
-    pages.forEach(function(item) {
-        if(item.closest('.page:not(.playlist__page)')) {
-            item.classList.add('hidden-page');
-        }
-        else {
-            item.classList.remove('hidden-page');
-        }
-    })
+    loadPage('.page:not(.playlist__page)','hidden-page')
 }
 artistPageBtn.onclick = function() {
-    pages.forEach(function(item) {
-        if(item.closest('.page:not(.artist__page)')) {
-            item.classList.add('hidden-page');
-        }
-        else {
-            item.classList.remove('hidden-page');
-        }
-    })
+    loadPage('.page:not(.artist__page)','hidden-page')
 }
 albumPageBtn.onclick = function() {
-    pages.forEach(function(item) {
-        if(item.closest('.page:not(.album__page)')) {
-            item.classList.add('hidden-page');
-        }
-        else {
-            item.classList.remove('hidden-page');
-        }
-    })
+    loadPage('.page:not(.album__page)','hidden-page')
 }
 mvPageBtn.onclick = function() {
-    pages.forEach(function(item) {
-        if(item.closest('.page:not(.mv__page)')) {
-            item.classList.add('hidden-page');
-        }
-        else {
-            item.classList.remove('hidden-page');
-        }
-    })
+    loadPage('.page:not(.mv__page)','hidden-page')
 }
 uploadPageBtn.onclick = function() {
-    pages.forEach(function(item) {
-        if(item.closest('.page:not(.upload__page)')) {
-            item.classList.add('hidden-page');
-        }
-        else {
-            item.classList.remove('hidden-page');
-        }
-    })
+    loadPage('.page:not(.upload__page)','hidden-page')
 }
 /* ========================== HANDLE EVENT ON PAGE ============================ */
 
