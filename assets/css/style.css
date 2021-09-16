@@ -2046,3 +2046,54 @@ body.light-theme .btn-save{
 .play-list__music::-webkit-scrollbar-thumb {
     background-color: var(--bg-color);
 }
+/* loading page */
+.loading-wrapper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(92, 17, 92, .5);
+    z-index: 99999;
+}
+.loading {
+    width: 10rem;
+    height: 10rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.loading span {
+    font-size: 1.4rem;
+    color: #ffffff;
+    font-weight: 600;
+    user-select: none;
+    pointer-events: none;
+}
+.loading-item {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: rotate(calc(var(--value) * 45deg));
+}
+.loading-item::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 2rem;
+    height: 2rem;
+    /* border: 5px solid #0abde3; */
+    background-color: #ff6b6b;
+    border-radius: 50%;
+    filter: hue-rotate(calc(var(--value) * 45deg));
+    animation: loading 1s infinite;
+    animation-delay: calc(var(--value) * 0.125s);
+    animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+@keyframes loading {
+    to {
+    transform: scale(0);
+    }
+}

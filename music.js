@@ -447,8 +447,8 @@ const app = {
                 volumeControl.value = 80;
                 audio.volume = volumeControl.value / 100;
                 progressVolume.style.width = volumeControl.value + '%';
-                volume.classList.add('ri-volume-up-line')
-                volume.classList.remove('ri-volume-mute-line')
+                volume.classList.add('ri-volume-up-line');
+                volume.classList.remove('ri-volume-mute-line');
             }
         }
         playAll.onclick = function() {
@@ -553,7 +553,7 @@ const app = {
     prevSong: function() {
         this.currentIndex--;
         if(this.currentIndex < 0) {
-            this.currentIndex = this.songs.length - 1;
+            this.currentIndex == this.songs.length - 1;
         }
         const itemName = $$('.songs__item-name')
         tagTitle.innerText = itemName[this.currentIndex].textContent;

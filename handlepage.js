@@ -1,4 +1,11 @@
 
+const loading = document.getElementById('loading');
+window.addEventListener('load',function() {
+    loading.style.display = "none";
+})
+
+
+
 const navItem = document.querySelectorAll('.nav__bar-item')
 const pages = document.querySelectorAll('.page')
 const historySearch = document.querySelector('.histories-search');
